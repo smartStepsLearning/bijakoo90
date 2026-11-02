@@ -52,7 +52,7 @@ const CW=[['🔴','red'],['🔵','blue'],['🟢','green'],['🟡','yellow'],['�
 const typos=w=>[...new Set([x=>x[1]+x[0]+x.slice(2),x=>x.slice(0,-1),x=>x[0]+x[2]+x[1]+x.slice(3),x=>x+x.slice(-1)].map(f=>f(w)).filter(x=>x!=w))];
 const AY=[['Kucing minum ___.','susu',['kasut','buku']],['Saya makan ___.','nasi',['kereta','bola']],['Burung boleh ___.','terbang',['memandu','membaca']],['Ikan hidup di dalam ___.','air',['pokok','awan']],['Saya membaca ___.','buku',['nasi','kerusi']],['Matahari terbit pada waktu ___.','pagi',['malam','tengah malam']],['Kereta ada empat ___.','roda',['sayap','sirip']],['Lembu makan ___.','rumput',['kasut','batu']],['Kami belajar di ___.','sekolah',['laut','hutan']],['Saya memakai ___ di kaki.','kasut',['topi','baju']]];
 const JL=[['ا','alif'],['ب','ba'],['ت','ta'],['ج','jim'],['د','dal'],['ر','ra'],['س','sin'],['م','mim'],['ن','nun'],['ك','kaf'],['ل','lam'],['ه','ha']];
-const JW=[['بوكو','buku'],['ايكن','ikan'],['رومه','rumah'],['كوچيڠ','kucing'],['بولن','bulan'],['نسي','nasi'],['ماتا','mata'],['بولا','bola'],['سوسو','susu'],['كاكي','kaki']];
+const JW=[['بوكو','buku'],['ايكن','ikan'],['رومه','rumah'],['كوچيڠ','kucing'],['بولن','bulan'],['ناسي','nasi'],['ماتا','mata'],['بولا','bola'],['سوسو','susu'],['كاكي','kaki']];
 const E=['🍎','⭐','🐟','🎈','🍓','🐤','🚗','🍪'],rn=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
 const pairs=(a,b,c,d)=>{const o=[];for(let i=a;i<=b;i++)for(let j=c;j<=d;j++)o.push([i,j]);return o};
 const gBM1=()=>sh(AZ).slice(0,10).map((L,i)=>i%2?(w=>mc(`${w[0]}<br>Huruf pertama?`,w[1][0].toUpperCase(),oth(w[1][0].toUpperCase(),AZ)))(R(W)):mc(`Pilih huruf kecil bagi <b>${L}</b>`,L.toLowerCase(),oth(L,AZ).map(x=>x.toLowerCase())));
